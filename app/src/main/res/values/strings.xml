@@ -2,4 +2,13 @@
     <string name="app_name">Flixster+ Popular Movies</string>
     <string name="most_popular_movies_this_week">Most Popular Movies This Week</string>
     <string name="most_popular_tv_shows_this_week">Most Popular TV Shows This Week</string>
+    <string name="overview">Overview:</string>
+    <string name="overview_words">If the users select one of the stations with available data and the following specifications:
+Machine learning models: Classical time series models, RNN, or LSTM or HMM
+Training method: Train with the prediction target only or the entire dataset
+Prediction target: Temperature,  humidity, or precipitation
+Window: Window greater than zero
+Time of prediction: Next day, week, or month
+</string>
+    <string name="title">title</string>
 </resources>

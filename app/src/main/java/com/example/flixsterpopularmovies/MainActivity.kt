@@ -1,5 +1,6 @@
 package com.example.flixsterpopularmovies
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -73,8 +74,8 @@ class MainActivity : AppCompatActivity() {
                 val models: List<Movie> = gson.fromJson(resultJson, arrayMovieType)
                 //recyclerView1.adapter = PopularMoviesAdapter(models)
                 when (recyclerView1){
-                    tvShowRecyclerView -> recyclerView1.adapter = PopularTVShowAdapter(models)
-                    moviesRecyclerView -> recyclerView1.adapter = PopularMoviesAdapter(models)
+                    tvShowRecyclerView -> recyclerView1.adapter = PopularTVShowAdapter(models, this@MainActivity)
+                    moviesRecyclerView -> recyclerView1.adapter = PopularMoviesAdapter(models, this@MainActivity)
                 }
             }
 
